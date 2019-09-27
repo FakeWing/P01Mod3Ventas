@@ -5,7 +5,8 @@
  */
 package p01mod3ventas.modulos;
 
-import junit.framework.Assert;
+
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
@@ -23,7 +24,7 @@ public class TestSubTotal {
         System.out.println("Subtotal");
         Venta venta = new Venta ("cod123", 100000, 30);
         ColeccionVentas instance = new ColeccionVentas();
-        Assert.assertTrue(instance.subTotal(venta)==3000000);
+        assertTrue(instance.subTotal(venta)==3000000);
         
     }
     
